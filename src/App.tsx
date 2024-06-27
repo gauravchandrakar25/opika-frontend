@@ -8,7 +8,7 @@ const App: React.FC = () => {
       <UserProfile
         name="John Doe"
         imageSrc={UserPic}
-        bio="A passionate developer."
+        bio="A passionate full-stack developer with over 3 years of experience."
         email="john.doe@example.com"
       />
     </div>
