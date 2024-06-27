@@ -21,7 +21,7 @@ Before running the application, ensure you have the following installed:
 
 Create a .env file in the root directory:
 
-    REACT_APP_API_BASE_URL=5000
+    REACT_APP_API_BASE_URL="https://localhost:5000/api"
 
 ## Getting Started
 
