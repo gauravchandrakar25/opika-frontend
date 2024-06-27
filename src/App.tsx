@@ -9,12 +9,15 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        //please replace the id with the user id in your database
+        //please replace the id with the user id in your database, I have not created separate UI for adding the userID from the frontend
         const response = await axiosInstance.get(
           "/users/667dad23ee012c1a23fd38a1"
         );
-        setUserData(response.data);
+        if (response.status === 200) {
+          setUserData(response.data);
+        }
       } catch (error) {
+        setUserData(null);
         console.error("Error fetching user data:", error);
       }
     };
@@ -24,12 +27,29 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <UserProfile
-        name={userData?.name}
-        imageSrc={userData?.profilePicture}
-        bio={userData?.bio}
-        email={userData?.email}
-      />
+      {userData ? (
+        <UserProfile
+          name={userData?.name}
+          imageSrc={userData?.profilePicture}
+          bio={userData?.bio}
+          email={userData?.email}
+        />
+      ) : (
+        <>
+          <p className="text-center">
+            please replace the id with the user id in your database, I have not
+            created separate UI for adding the userID from the frontend
+          </p>
+          <UserProfile
+            name={"No User"}
+            imageSrc={
+              "https://toppng.com/uploads/preview/instagram-default-profile-picture-11562973083brycehrmyv.png"
+            }
+            bio={"No user bio available"}
+            email={"no user email available"}
+          />
+        </>
+      )}
     </div>
   );
 };

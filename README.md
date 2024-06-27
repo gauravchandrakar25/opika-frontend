@@ -9,6 +9,10 @@ Welcome to the React frontend application for viewing user profiles. This applic
 - [Getting Started](#getting-started)
   - [Installation](#installation)
 
+## Replace the user id with the actual user id from the DB, in App.tsx file, if you don't replace it you'll get this warning "please replace the id with the user id in your database, I have not created separate UI for adding the userID from the frontend"
+
+![alt text](image.png)
+
 ## Prerequisites
 
 Before running the application, ensure you have the following installed:
