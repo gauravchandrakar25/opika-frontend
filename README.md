@@ -11,7 +11,7 @@ Welcome to the React frontend application for viewing user profiles. This applic
 
 ## Replace the user id with the actual user id from the DB, in App.tsx file, if you don't replace it you'll get this warning "please replace the id with the user id in your database, I have not created separate UI for adding the userID from the frontend"
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## Prerequisites
 
