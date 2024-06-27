@@ -9,8 +9,9 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
+        //please replace the id with the user id in your database
         const response = await axiosInstance.get(
-          "/users/667d9e02d4887ce0e4f89228"
+          "/users/667dad23ee012c1a23fd38a1"
         );
         setUserData(response.data);
       } catch (error) {
@@ -24,10 +25,10 @@ const App: React.FC = () => {
   return (
     <div>
       <UserProfile
-        name={userData.name}
-        imageSrc={UserPic}
-        bio={userData.bio}
-        email={userData.email}
+        name={userData?.name}
+        imageSrc={userData?.profilePicture}
+        bio={userData?.bio}
+        email={userData?.email}
       />
     </div>
   );
