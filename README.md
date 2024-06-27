@@ -35,7 +35,6 @@ Follow these steps to get the frontend application up and running on your local 
 
    ```bash
    git clone <repository-url>
-   cd <repository-folder>/frontend
    ```
 
 2. Install dependencies:
