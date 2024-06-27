@@ -1,26 +1,13 @@
 # Opika React Frontend Application
 
-Welcome to the React frontend application for managing user profiles. This application interacts with a backend Node.js API on user data.
+Welcome to the React frontend application for viewing user profiles. This application interacts with a backend Node.js API on user data.
 
 ## Table of Contents
 
-- [Features](#features)
 - [Prerequisites](#prerequisites)
+- [Configuration](#configuration)
 - [Getting Started](#getting-started)
   - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Running the Application](#running-the-application)
-- [Folder Structure](#folder-structure)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Features
-
-- **User Profile Display**: View user profiles with name, bio, and profile picture.
-- **Interactive UI**: Intuitive interface with responsive design.
-- **Integration with Backend**: Communicates with backend API for data management.
-- **Component Reusability**: Modular components for scalability and maintainability.
 
 ## Prerequisites
 
